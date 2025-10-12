@@ -15,34 +15,48 @@
 
 | Platform | Link | Logo |
 |-----------|------|------|
-| **Replit** | [https://replit.com/~](https://replit.com/~) | <img src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Replit_Logo.svg" width="45"/> |
-| **Render** | [https://render.com](https://render.com) | <img src="https://cdn.worldvectorlogo.com/logos/render-1.svg" width="45"/> |
-| **Glitch** | [https://glitch.com](https://glitch.com) | <img src="https://cdn.glitch.global/69bfb64b-0e0c-48b1-8a42-3b642ecaa18d/glitch-logo.svg" width="45"/> |
-| **Vercel** | [https://vercel.com](https://vercel.com) | <img src="https://assets.vercel.com/image/upload/v1662130559/front/favicon/vercel/180x180.png" width="45"/> |
-| **Railway** | [https://railway.app](https://railway.app) | <img src="https://railway.app/brand/logo-light.svg" width="45"/> |
-| **Koyeb** | [https://www.koyeb.com](https://www.koyeb.com) | <img src="https://www.koyeb.com/static/images/logo-light.svg" width="45"/> |
-| **GitHub Pages** | [https://github.com](https://github.com) | <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width="45"/> |
+| **Replit** | [https://replit.com/~](https://replit.com/~) | ![Replit](https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/replit.svg) |
+| **Render** | [https://render.com](https://render.com) | ![Render](https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/render.svg) |
+| **Glitch** | [https://glitch.com](https://glitch.com) | ![Glitch](https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/glitch.svg) |
+| **Vercel** | [https://vercel.com](https://vercel.com) | ![Vercel](https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/vercel.svg) |
+| **Railway** | [https://railway.app](https://railway.app) | ![Railway](https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/railway.svg) |
+| **Koyeb** | [https://www.koyeb.com](https://www.koyeb.com) | ![Koyeb](https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/koyeb.svg) |
+| **GitHub Pages** | [https://github.com](https://github.com) | ![GitHub](https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg) |
 
 ---
 
-## 🧠 Key Features
+## 👑 Developer
 
-- 🤖 AI Chat (Free Proxy - No API Key Needed)  
-- 🎵 YouTube / TikTok / CapCut Downloader  
-- 🏅 XP Rank Card System  
-- 💬 No Prefix Chat Support  
-- 🕒 Auto Time Messages  
-- 🧩 Profile Card & Info Fetch  
-- 💥 Funny, Love & Reaction Commands  
-- 🖼️ AI Image Generator (Flux / SD Proxy)  
-- 🎰 Slot Game with Bet System  
-- 🛡️ AntiLock, Guard & Auto-Restore Group  
-- 🔔 Auto Reactions & Smart Replies  
+> Author: Jahidul Islam Sagor  
+🌐 [Facebook Profile](https://facebook.com/jahidulsagor.official)  
+💬 [Join Bot Group](https://facebook.com/groups/yourbotgroup)  
+🧠 [GitHub Profile](https://github.com/your-username)
 
 ---
 
-## ⚙️ Installation Guide
+## 💖 Support Me
 
-### 1️⃣ Clone Repository
-```bash
-git clone https://github.com/your-username/GoatBot-V2.git
+<p align="center">
+  <a href="https://github.com/your-username/GoatBot-V2/stargazers">
+    <img src="https://img.shields.io/github/stars/your-username/GoatBot-V2?style=social" alt="GitHub Stars"/>
+  </a>
+  <a href="https://replit.com/~">
+    <img src="https://img.shields.io/badge/Host%20on-Replit-blue?style=flat-square&logo=replit" alt="Replit Badge"/>
+  </a>
+  <a href="https://render.com">
+    <img src="https://img.shields.io/badge/Deploy%20on-Render-purple?style=flat-square&logo=render" alt="Render Badge"/>
+  </a>
+</p>
+
+---
+
+## 📜 License
+
+This project is open-source under the MIT License.  
+Use, modify, and share — just keep the credits to SAGOR ❤️
+
+---
+
+<p align="center">
+  <b>© 2025 | Made with 💜 by Jahidul Islam Sagor</b>
+</p>
