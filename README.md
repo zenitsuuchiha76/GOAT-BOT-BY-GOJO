@@ -1,11 +1,11 @@
 <h1 align="center">🐐 GOAT BOT V2 - Powered by SAGOR 💫</h1>
 
 <p align="center">
-  <img src="https://i.imgur.com/4M7vZ6F.gif" width="180" alt="Goat Bot Logo"/>
+  <img src="https://i.imgur.com/vO080jt.jpeg" width="180" alt="Goat Bot Logo"/>
 </p>
 
 <p align="center">
-  <b>A stylish, powerful, multipurpose Messenger Bot built with <code>fca-priyansh</code>.</b><br>
+  <b>A stylish, powerful, multipurpose Messenger Bot built with <code>unofficial-fca</code>.</b><br>
   💬 AI Chat | 🎶 Music | 🎬 Downloader | 🎮 Fun | 🧠 Smart | 🛡️ Secure
 </p>
 
@@ -28,16 +28,16 @@
 ## 👑 Developer
 
 > Author: Jahidul Islam Sagor  
-🌐 [Facebook Profile](https://facebook.com/jahidulsagor.official)  
-💬 [Join Bot Group](https://facebook.com/groups/yourbotgroup)  
-🧠 [GitHub Profile](https://github.com/your-username)
+🌐 [Facebook Profile](https://facebook.com/JAHIDUL.ISLAM.404)  
+💬 [Join Bot Group](https://facebook.com/groups/991444893060055/)  
+🧠 [GitHub Profile](https://github.com/SAGOR-KINGx)
 
 ---
 
 ## 💖 Support Me
 
 <p align="center">
-  <a href="https://github.com/your-username/GoatBot-V2/stargazers">
+  <a href="https://github.com/SAGOR-KINGx/GoatBot-V2/stargazers">
     <img src="https://img.shields.io/github/stars/your-username/GoatBot-V2?style=social" alt="GitHub Stars"/>
   </a>
   <a href="https://replit.com/~">
