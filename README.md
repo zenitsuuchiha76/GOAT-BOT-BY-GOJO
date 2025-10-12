@@ -37,7 +37,7 @@
 ## 💖 Support Me
 
 <p align="center">
-  <a href="https://github.com/SAGOR-KINGx/GoatBot-V2/stargazers">
+  <a href="https://github.com/SAGOR-KINGx/JUST-WOW/stargazers">
     <img src="https://img.shields.io/github/stars/your-username/GoatBot-V2?style=social" alt="GitHub Stars"/>
   </a>
   <a href="https://replit.com/~">
