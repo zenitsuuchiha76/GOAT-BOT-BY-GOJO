@@ -34,6 +34,10 @@
 
 ---
 
+# BOT SETUP VIDEO 
+
+[SETUP VIDEO](https://www.facebook.com/reel/846437804565242/?mibextid=rS40aB7S9Ucbxw6v)
+
 # FACEBOOK TOKEN GEN & COOKIES 
 ```
 https://github.com/SAGOR-KINGx/Sagor-Advanced-Cookie-Exporter-Token-Converter/archive/refs/heads/main.zip
