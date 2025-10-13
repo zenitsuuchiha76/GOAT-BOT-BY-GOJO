@@ -4,7 +4,7 @@ const path = require("path");
 
 module.exports = {
   config: {
-    name: "dalle",
+    name: "poli",
     aliases: ["aiimg", "imagegen"],
     version: "1.2",
     author: "SaGor",
