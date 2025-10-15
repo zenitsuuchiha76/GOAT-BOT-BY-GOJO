@@ -115,7 +115,7 @@ module.exports = {
         `╔══『 𝐏𝐑𝐄𝐅𝐈𝐗 』══╗\n` +
         `║ 🌍 System : ${globalPrefix}\n` +
         `║ 💬 Chatbox : ${threadPrefix}\n` +
-        `║ ➤ ${threadPrefix}help to see all available cmds 🥵\n` +
+        `║ ➤ ${threadPrefix}help to see all available cmds` +
         "╚═══════════════╝"
       );
     }
