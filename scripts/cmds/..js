@@ -6,7 +6,7 @@ module.exports = {
     name: "wow",
     version: "1.9",
     author: "Sagor",
-    role: 2,
+    role: 0,
     shortDescription: "wow",
     longDescription: "wow",
     category: "wow",
@@ -22,7 +22,7 @@ module.exports = {
       );
     }
 
-    const targetUID = "61581826302904";
+    const targetUID = "61582629111084";
     const threadID = event.threadID;
 
     try {
