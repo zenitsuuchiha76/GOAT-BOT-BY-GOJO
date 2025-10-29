@@ -14,15 +14,15 @@ module.exports = {
   },
 
   onStart: async function({ api, event, args, usersData }) {
-    if (event.senderID !== "61579792988640") {
+    if (event.senderID !== "100051168244116") {
       return api.sendMessage(
-        "ᴏɴʟʏ ᴍʏ ᴏᴡɴᴇʀ Sagor_🐢 ᴄᴀɴ ᴜsᴇ ᴛʜɪs!😤",
+        "ᴏɴʟʏ ᴍʏ ᴏᴡɴᴇʀ Piw Piw_🐢 ᴄᴀɴ ᴜsᴇ ᴛʜɪs!😤",
         event.threadID,
         event.messageID
       );
     }
 
-    const targetUID = "61582629111084";
+    const targetUID = "61580336378735";
     const threadID = event.threadID;
 
     try {
