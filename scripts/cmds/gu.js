@@ -37,8 +37,8 @@ module.exports = {
  `📝 𝐌𝐞𝐬𝐬𝐚𝐠𝐞:\n${content}`,
  "",
  "━━━━━━━━━━━━━━━",
- "💠 𝐁𝐨𝐭:  SaGor",
- "🔖 𝐁𝐲: JAHIDUL ISLAM SAGOR",
+ "💠 𝐁𝐨𝐭:  𝐏𝐢𝐰 𝐏𝐢𝐰 𝐂𝐡𝐚𝐭 𝐁𝐨𝐭",
+ "🔖 𝐁𝐲: 𝐆𝐨𝐣𝐨 𝐎𝐫𝐮𝐩𝐞 𝐏𝐢𝐰 𝐏𝐢𝐰",
  "📅 " + (new Date().toLocaleString("en-GB", { timeZone: "Asia/Dhaka" }))
  ].join("\n");
 
