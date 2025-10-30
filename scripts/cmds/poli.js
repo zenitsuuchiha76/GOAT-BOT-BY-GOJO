@@ -49,7 +49,7 @@ module.exports = {
     } catch (e) {
       console.error(e);
       tempFiles.forEach(f => fs.existsSync(f) && fs.unlinkSync(f));
-      api.sendMessage("❌ Failed to generate images.", threadID, messageID);
+      api.sendMessage("❌ Piw piw chat bot Failed to generate images.", threadID, messageID);
     }
   }
 };
