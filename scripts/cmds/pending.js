@@ -58,7 +58,7 @@ module.exports = {
       for (const singleIndex of indexes) {
         if (isNaN(singleIndex) || singleIndex <= 0 || singleIndex > Reply.pending.length)
           return api.sendMessage(getLang("invalidNumber", singleIndex), threadID, messageID);
-        api.sendMessage(`Thank you for inviting me to the group!\nBot prefix: ${prefix}\nTo view the list of commands, please enter: ${prefix}help`, Reply.pending[singleIndex - 1].threadID);
+        api.sendMessage(`Hi Iam Piw Piw Chat Bot Thank you for inviting me to the group!\nBot prefix: ${prefix}\nTo view the list of commands, please enter: ${prefix}help`, Reply.pending[singleIndex - 1].threadID);
         count += 1;
       }
       return api.sendMessage(getLang("approveSuccess", count), threadID, messageID);
