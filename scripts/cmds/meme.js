@@ -24,7 +24,7 @@ module.exports = {
  const data = res.data;
 
  if (!data || !data.url) {
- return message.reply("❌ Couldn't fetch a meme. Try again.");
+ return message.reply("❌ Piw Piw Chat Bot Couldn't fetch a meme. Try again.");
  }
 
  const caption = `😂 ${data.title}\n👤 u/${data.author} | 🔺 ${data.ups} ups\n📎 ${data.postLink}`;
