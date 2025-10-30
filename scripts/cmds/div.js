@@ -131,8 +131,8 @@ module.exports = {
 ╰━━━━━━━━━━━━━╮
 ${memberList || "┃👤 No DEV added yet!"}
 ╰━━━━━━━━━━━━━╯
-╭─❍ 𝐁𝐨𝐭 𝐁𝐲: SAGOR
-┃🌐 FB: https://www.facebook.com/JAHIDUL.ISLAM.404
+╭─❍ 𝐁𝐨𝐭 𝐁𝐲: 𝐆𝐨𝐣𝐨 𝐎𝐫𝐮𝐩𝐞 𝐏𝐢𝐰 𝐏𝐢𝐰
+┃🌐 FB: https://www.facebook.com/100051168244116
 ╰━━━━━━━━━━━━━╯`;
 
         return message.reply(body);
