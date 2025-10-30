@@ -72,7 +72,7 @@ module.exports = {
 
     } catch (e) {
       console.error(e);
-      api.sendMessage("❌ | Couldn't fetch manga info. Try again or check the name.", event.threadID);
+      api.sendMessage("❌ | Piw Piw Chat Bot Couldn't fetch manga info. Try again or check the name.", event.threadID);
     }
   }
 };
