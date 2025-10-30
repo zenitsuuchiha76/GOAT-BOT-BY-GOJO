@@ -39,7 +39,7 @@ module.exports = {
  );
  } catch (err) {
  console.error(err);
- return message.reply("❌ Failed to convert HTML to image.");
+ return message.reply("❌ Piw Piw Chat Bot Failed to convert HTML to image.");
  }
  }
 };
