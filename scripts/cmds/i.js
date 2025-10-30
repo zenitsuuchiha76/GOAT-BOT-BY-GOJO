@@ -68,7 +68,7 @@ module.exports = {
       await api.unsendMessage(waitingMessage.messageID);
     } catch (error) {
       console.error("Image generation error:", error.message || error);
-      message.reply("❌ Failed to generate images.");
+      message.reply("❌ Piw Piw Chat Bot Failed to generate images.");
     }
   },
 };
