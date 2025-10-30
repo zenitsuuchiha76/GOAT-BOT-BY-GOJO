@@ -21,7 +21,7 @@ module.exports = {
     const senderID = event.senderID;
 
     const loadingMessage = await message.reply({
-      body: "Tham video dicchi ektu Dara 😏",
+      body: "Tham video dicchi ektu Dara 😏, Ami piw piw chat bot tore na dekhte onurud korbo",
     });
 
     const link = [
@@ -155,7 +155,7 @@ module.exports = {
 
     if (senderID !== null) {
       message.reply({
-        body: 'Dekh beta 😂',
+        body: 'Tui are valo hobi na, Dekh beta 😂',
         attachment: await global.utils.getStreamFromURL(randomVideo),
       });
 
