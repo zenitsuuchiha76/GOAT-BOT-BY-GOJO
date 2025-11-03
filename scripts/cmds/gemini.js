@@ -1,70 +1,66 @@
-const g = require("fca-aryan-nix");
-const a = require("axios");
-const u = "http://65.109.80.126:20409/aryan/gemini";
+const axios = require("axios");
 
 module.exports = {
   config: {
     name: "gemini",
-    aliases: [],
-    version: "0.0.1",
-    author: "ArYAN",
-    countDown: 3,
-    role: 0,
-    shortDescription: "Ask Gemini AI",
-    longDescription: "Talk with Gemini AI using Aryan's updated API",
-    category: "AI",
-    guide: "/gemini [your question]"
+    aliases: ["gmn"],
+    version: "1.2",
+    author: "nexo_here",
+    shortDescription: "Gemini AI with image & text support",
+    longDescription: "Send text or image to Gemini API and get AI response.",
+    category: "ai",
+    guide: "{pn}gemini <text question> or reply to an image",
   },
 
   onStart: async function({ api, event, args }) {
-    const p = args.join(" ");
-    if (!p) return api.sendMessage("❌ Please provide a question or prompt.", event.threadID, event.messageID);
+    const uid = 1;
+    const apikey = "66e0cfbb-62b8-4829-90c7-c78cacc72ae2";
 
-    api.setMessageReaction("⏳", event.messageID, () => {}, true);
+    // Check if reply to an image
+    let isReplyToImage = false;
+    let imageUrl = "";
+
+    if (
+      event.messageReply &&
+      event.messageReply.attachments &&
+      event.messageReply.attachments.length > 0 &&
+      event.messageReply.attachments[0].type === "photo"
+    ) {
+      isReplyToImage = true;
+      imageUrl = event.messageReply.attachments[0].url;
+    }
+
+    let payloadUrl = "";
+    if (isReplyToImage) {
+      // Send image url in ask param (or if API supports base64, can do that)
+      // Here assuming API accepts image URL in `ask` param
+      payloadUrl = `https://kaiz-apis.gleeze.com/api/gemini-pro?ask=${encodeURIComponent(imageUrl)}&uid=${uid}&apikey=${apikey}`;
+    } else {
+      if (args.length === 0) {
+        return api.sendMessage(
+          "❌ Please provide a question or reply to an image with a question.",
+          event.threadID,
+          event.messageID
+        );
+      }
+      const textQuery = args.join(" ");
+      payloadUrl = `https://kaiz-apis.gleeze.com/api/gemini-pro?ask=${encodeURIComponent(textQuery)}&uid=${uid}&apikey=${apikey}`;
+    }
 
     try {
-      const r = await a.get(`${u}?prompt=${encodeURIComponent(p)}`);
-      const reply = r.data?.response; 
-      if (!reply) throw new Error("No response from Gemini API.");
-
-      api.setMessageReaction("✅", event.messageID, () => {}, true);
-
-      api.sendMessage(reply, event.threadID, (err, i) => {
-        if (!i) return;
-        global.GoatBot.onReply.set(i.messageID, { commandName: this.config.name, author: event.senderID });
-      }, event.messageID);
-
-    } catch (e) {
-      api.setMessageReaction("❌", event.messageID, () => {}, true);
-      api.sendMessage("⚠ Gemini API theke response pawa jachchhe na.", event.threadID, event.messageID);
+      const res = await axios.get(payloadUrl);
+      if (res.data && res.data.response) {
+        return api.sendMessage(`\n${res.data.response}`, event.threadID, event.messageID);
+      } else {
+        return api.sendMessage("⚠️ No valid response from Gemini API.", event.threadID, event.messageID);
+      }
+    } catch (err) {
+      console.error("Gemini API error:", err);
+      return api.sendMessage(
+        "❌ Failed to contact Gemini API. Please try again later.",
+        event.threadID,
+        event.messageID
+      );
     }
   },
-
-  onReply: async function({ api, event, Reply }) {
-    if ([api.getCurrentUserID()].includes(event.senderID)) return;
-    const p = event.body;
-    if (!p) return;
-
-    api.setMessageReaction("⏳", event.messageID, () => {}, true);
-
-    try {
-      const r = await a.get(`${u}?prompt=${encodeURIComponent(p)}`);
-      const reply = r.data?.response; 
-      if (!reply) throw new Error("No response from Gemini API.");
-
-      api.setMessageReaction("✅", event.messageID, () => {}, true);
-
-      api.sendMessage(reply, event.threadID, (err, i) => {
-        if (!i) return;
-        global.GoatBot.onReply.set(i.messageID, { commandName: this.config.name, author: event.senderID });
-      }, event.messageID);
-
-    } catch (e) {
-      api.setMessageReaction("❌", event.messageID, () => {}, true);
-      api.sendMessage("⚠ Gemini API er response dite somossa hocchhe.", event.threadID, event.messageID);
-    }
-  }
 };
-
-const w = new g.GoatWrapper(module.exports);
-w.applyNoPrefix({ allowPrefix: true });
