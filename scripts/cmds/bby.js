@@ -159,9 +159,9 @@ module.exports.onChat = async ({
 }) => {
     try {
         const body = event.body ? event.body?.toLowerCase() : ""
-        if (body.startsWith("baby") || body.startsWith("bby") || body.startsWith("bot") || body.startsWith("jan") || body.startsWith("babu") || body.startsWith("gojo")) {
+        if (body.startsWith("baby") || body.startsWith("bby") || body.startsWith("bot") || body.startsWith("jan") || body.startsWith("babu") || body.startsWith("janu")) {
             const arr = body.replace(/^\S+\s*/, "")
-            const randomReplies = ["😚", "Yes 😀, I am here", "What's up?", "Bolo jaan ki korte pari tmr jonno", "Amake na deke amar boss gojor sathe prem koro😘", "Ami shudo gojo orupe piw piw boss er",  "Amake pete hole amar boss gojo orupe piw piw ke ekta gf potay dite hobe", " amake etu dako keno", "Babu tumi khaiso", " Piw Piw Chat Bot tomar jonno ki korte pari bolo"];
+            const randomReplies = ["😚", "Yes 😀, I am here", "What's up?", "Bolo jaan ki korte pari tmr jonno", "Amake na deke meye hole amar boss gojor sathe prem koro😘", "Ami shudo gojo orupe piw piw boss er",  "Amake pete hole amar boss gojo orupe piw piw ke ekta gf potay dite hobe", " amake etu dako keno", "Babu tumi khaiso", " Piw Piw Chat Bot tomar jonno ki korte pari bolo", "Amar boss gojo orupe piw piw ekhono single tmi meye hole take potate paro", "Etu dako kno amar sathe ki prem korbe naki", " assalamulaikum", "kire vondo amake keno bar bar dakis", " tui ki are vondami charbi na", "tui ki meye... Tui ki single ta hole amar boss gojo ourpe piw piw ke pota"];
             if (!arr) {
 
                 await api.sendMessage(randomReplies[Math.floor(Math.random() * randomReplies.length)], event.threadID, (error, info) => {
